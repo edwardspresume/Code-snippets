@@ -1,3 +1,3 @@
-### Code Snippets
+## Code Snippets
 
-## Snippets that makes life easier and more efficient
+### Snippets that makes life easier and more efficient
