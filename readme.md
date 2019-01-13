@@ -1,3 +1,3 @@
-#Code Snippets
+### Code Snippets
 
-### A collection snippets for an array of languages
+## Snippets that makes life easier and more efficient
