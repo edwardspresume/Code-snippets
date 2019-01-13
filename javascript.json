@@ -1,0 +1,123 @@
+{
+    /*
+    	// Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and 
+    	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+    	// same ids are connected.
+    	// Example:
+    	"Print to console": {
+    		"prefix": "log",
+    		"body": [
+    			"console.log('$1');",
+    			"$2"
+    		],
+    		"description": "Log output to console"
+    	}
+    */
+
+    /* -------------------------------------------------------------- Comments -------------------------------------------------------------- */
+    "comment block": {
+        "prefix": "comment",
+        "body": [
+            "/* ==========================================================================",
+            "                                 ${title}",
+            "   ========================================================================== */",
+            "",
+            "$0"
+        ]
+    },
+
+    "Single comment section": {
+        "prefix": "slcs",
+        "body": "/* -------------------------------------------------------------- $1 -------------------------------------------------------------- */"
+    },
+
+    "Single line comment": {
+        "prefix": "slc",
+        "body": "/* $0 */"
+    },
+
+
+    /* -------------------------------------------------------------- Console/Debug -------------------------------------------------------------- */
+    "Console log": {
+        "prefix": "logD",
+        "body": "console.log($0);",
+    },
+
+    "Debug: Log name": {
+
+        "prefix": "dln",
+        "body": " console.log(`----------------------------- $1 -----------------------------`);"
+    },
+
+    "Debug: log info": {
+        "prefix": "dli",
+        "body": "console.log('$1:', $0)"
+        // "body": "console.log(`${$1}: ${$0}`)"
+    },
+
+
+    "Document.write()": {
+        "prefix": "dWrite",
+        "body": [
+            "document.write('$1')"
+        ]
+    },
+
+    "Arrow Function": {
+        "prefix": "af",
+        "body": [
+            "const $1 = ($2) => {",
+            "\t$3",
+            "}"
+        ]
+    },
+
+    "Class constructor": {
+        "prefix": "cc",
+        "body": [
+            "class $1 {",
+            "\tconstructor($2,$3) {",
+            "\t\tthis.$2 = $2",
+            "\t\tthis.$3 = $3",
+            "\t}",
+            "}"
+        ]
+    },
+
+
+    "Class constructor extends": {
+        "prefix": "ce",
+        "body": [
+            "class $1 extends $2 {",
+            "\tconstructor($3,$4,$5) {",
+            "\tsuper($3,$4)",
+            "\t\tthis.$5 = $5",
+            "\t}",
+            "}"
+        ]
+    },
+
+    "Modules": {
+        "prefix": "1",
+        "body": "const $1 = require($2);"
+    },
+
+    /* Task workers*/
+
+    "Task Packages": {
+        "prefix": "tp",
+        "body": [
+            "const gulp = require('gulp');",
+            "const sass = require('gulp-sass');",
+            "const uglify = require('gulp-uglify');",
+            "const concat = require('gulp-concat');",
+            "const htmlmin = require('gulp-htmlmin');",
+            "const imagemin = require('gulp-imagemin');",
+            "const cleanCSS = require('gulp-clean-css');",
+            "const autoprefixer = require('gulp-autoprefixer');",
+            "const browserSync = require('browser-sync').create();"
+        ]
+    }
+
+}
